@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="frmCopyOptions">
+            <connections>
+                <outlet property="cbRemember" destination="7Dy-L8-kdB" id="wVg-dB-fmu"/>
+                <outlet property="rbtnCopyToMemory" destination="sQG-nI-IEk" id="7Ws-NL-tRB"/>
+                <outlet property="rbtnCopyToNotes" destination="2c7-GV-n5e" id="tHt-Yc-53V"/>
+                <outlet property="rbtnExcludeAccents" destination="Ttg-Mw-ZUG" id="n5r-c1-d3r"/>
+                <outlet property="rbtnExcludeReference" destination="rt3-Dc-e6y" id="cAc-Oq-19J"/>
+                <outlet property="rbtnIncludeAccents" destination="z7O-WX-Rau" id="OxM-M2-cA0"/>
+                <outlet property="rbtnIncludeReference" destination="fKM-Xz-P2W" id="2Ps-NB-tXK"/>
+                <outlet property="thisWindow" destination="F0z-JX-Cv5" id="NhE-sX-R8q"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="661" height="238"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1055"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="661" height="238"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box fixedFrame="YES" title="Copy to ..." translatesAutoresizingMaskIntoConstraints="NO" id="7Gw-x3-Nkm">
+                        <rect key="frame" x="17" y="127" width="195" height="91"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <view key="contentView" id="UqZ-NS-kiS">
+                            <rect key="frame" x="3" y="3" width="189" height="73"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sQG-nI-IEk">
+                                    <rect key="frame" x="11" y="44" width="158" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="radio" title="memory (pasteboard)" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="6dn-68-Jf4">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="doCopyChoice:" target="-2" id="3yD-Qr-KUh"/>
+                                    </connections>
+                                </button>
+                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2c7-GV-n5e">
+                                    <rect key="frame" x="11" y="16" width="62" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="radio" title="Notes" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="ftf-6z-OKd">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="doCopyChoice:" target="-2" id="5z3-AE-hUp"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </view>
+                    </box>
+                    <box fixedFrame="YES" title="Reference ..." translatesAutoresizingMaskIntoConstraints="NO" id="2Aj-9Z-J8z">
+                        <rect key="frame" x="222" y="127" width="205" height="91"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <view key="contentView" id="OQQ-C8-ege">
+                            <rect key="frame" x="3" y="3" width="199" height="73"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rt3-Dc-e6y">
+                                    <rect key="frame" x="11" y="16" width="172" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="radio" title="not included in the copy" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="QIo-4i-Ppy">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="doReferenceChoice:" target="-2" id="4Ab-2g-ppd"/>
+                                    </connections>
+                                </button>
+                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fKM-Xz-P2W">
+                                    <rect key="frame" x="11" y="44" width="149" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="radio" title="included in the copy" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="fEI-39-gvq">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="doReferenceChoice:" target="-2" id="gt6-Rs-glE"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </view>
+                    </box>
+                    <box fixedFrame="YES" title="Accents (and the like) ..." translatesAutoresizingMaskIntoConstraints="NO" id="gfp-IJ-kbl">
+                        <rect key="frame" x="437" y="127" width="207" height="91"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <view key="contentView" id="g2g-s1-kmG">
+                            <rect key="frame" x="3" y="3" width="201" height="73"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z7O-WX-Rau">
+                                    <rect key="frame" x="11" y="44" width="149" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="radio" title="included in the copy" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="ifu-Dr-gpG">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="doAccentChoice:" target="-2" id="NUE-7f-AHk"/>
+                                    </connections>
+                                </button>
+                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ttg-Mw-ZUG">
+                                    <rect key="frame" x="11" y="16" width="172" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="radio" title="not included in the copy" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="miC-ma-bQN">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="doAccentChoice:" target="-2" id="z6l-yg-LqY"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </view>
+                    </box>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Dy-L8-kdB">
+                        <rect key="frame" x="55" y="92" width="554" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Remember these settings and don't show this dialog for the rest of the current session." bezelStyle="regularSquare" imagePosition="left" inset="2" id="Clp-40-54l">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u7i-yi-wPb">
+                        <rect key="frame" x="74" y="48" width="562" height="37"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" selectable="YES" id="VVl-Ni-Ewy">
+                            <font key="font" metaFont="system"/>
+                            <string key="title">(If you select this option and subsequently want to change the settings, you can do so by selecting "Change Copy Options" from the context menu.)</string>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kj5-r0-Y0C">
+                        <rect key="frame" x="13" y="13" width="76" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4hC-rj-2kV">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="doCancel:" target="-2" id="Wgb-Xa-2c5"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BsM-US-Ztb">
+                        <rect key="frame" x="594" y="13" width="54" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9CF-3Q-67u">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="doOk:" target="-2" id="g5S-ES-QFD"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="-161.5" y="124"/>
+        </window>
+    </objects>
+</document>

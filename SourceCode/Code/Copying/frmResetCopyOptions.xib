@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="frmResetCopyOptions">
+            <connections>
+                <outlet property="cbBHSChapter" destination="gVR-Ba-0HL" id="tfY-IS-Q2C"/>
+                <outlet property="cbBHSSelection" destination="QU3-kw-l5l" id="8PR-Ah-tya"/>
+                <outlet property="cbBHSVerse" destination="yNh-KT-7sc" id="k5k-WJ-VYx"/>
+                <outlet property="cbBHSWord" destination="0lR-9i-ql4" id="ynu-bS-iZ7"/>
+                <outlet property="cbLXXChapter" destination="tQQ-vb-ggl" id="FB1-yf-Lr3"/>
+                <outlet property="cbLXXSelection" destination="yaT-EC-2pF" id="hom-40-4iX"/>
+                <outlet property="cbLXXVerse" destination="ACv-Tj-Q4i" id="0U9-aT-mXM"/>
+                <outlet property="cbLXXWord" destination="kfj-WL-tcn" id="YCw-xp-sta"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Reset Copy Option(s)" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="712" height="349"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1055"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="712" height="349"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <splitView fixedFrame="YES" arrangesAllSubviews="NO" dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vSx-ZK-GlZ">
+                        <rect key="frame" x="20" y="161" width="672" height="144"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <customView fixedFrame="YES" id="ifd-2V-Mcg">
+                                <rect key="frame" x="0.0" y="0.0" width="338" height="144"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lwu-W9-s2M">
+                                        <rect key="frame" x="57" y="108" width="224" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Biblia Hebraica Stuttgartensia (BHS)" id="QQe-Zl-IgY">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0lR-9i-ql4">
+                                        <rect key="frame" x="18" y="83" width="158" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="check" title="copying a single word" bezelStyle="regularSquare" imagePosition="left" inset="2" id="vJr-kh-6B5">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yNh-KT-7sc">
+                                        <rect key="frame" x="18" y="61" width="122" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="check" title="copying a verse" bezelStyle="regularSquare" imagePosition="left" inset="2" id="aXq-bF-12E">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gVR-Ba-0HL">
+                                        <rect key="frame" x="18" y="39" width="186" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="check" title="copying the entire chapter" bezelStyle="regularSquare" imagePosition="left" inset="2" id="fkx-xh-sE9">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QU3-kw-l5l">
+                                        <rect key="frame" x="18" y="17" width="230" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="check" title="copying a selected portion of text" bezelStyle="regularSquare" imagePosition="left" inset="2" id="pRo-zY-52P">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </subviews>
+                            </customView>
+                            <customView fixedFrame="YES" id="2I4-gc-DVP">
+                                <rect key="frame" x="339" y="0.0" width="333" height="144"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2NI-2o-DhM">
+                                        <rect key="frame" x="112" y="108" width="108" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Septuagint (LXX)" id="CHz-Ap-bjL">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ACv-Tj-Q4i">
+                                        <rect key="frame" x="18" y="61" width="122" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="check" title="copying a verse" bezelStyle="regularSquare" imagePosition="left" inset="2" id="fhb-g8-P7q">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kfj-WL-tcn">
+                                        <rect key="frame" x="18" y="83" width="158" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="check" title="copying a single word" bezelStyle="regularSquare" imagePosition="left" inset="2" id="ion-ve-570">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tQQ-vb-ggl">
+                                        <rect key="frame" x="18" y="39" width="186" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="check" title="copying the entire chapter" bezelStyle="regularSquare" imagePosition="left" inset="2" id="jQ1-Vg-BLq">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yaT-EC-2pF">
+                                        <rect key="frame" x="18" y="17" width="230" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="check" title="copying a selected portion of text" bezelStyle="regularSquare" imagePosition="left" inset="2" id="7RY-u4-wGi">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </subviews>
+                            </customView>
+                        </subviews>
+                        <holdingPriorities>
+                            <real value="250"/>
+                            <real value="250"/>
+                        </holdingPriorities>
+                    </splitView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lJz-0f-zOg">
+                        <rect key="frame" x="26" y="313" width="284" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Use or change the stored, default settings for:" id="q8J-43-fUb">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="4fb-Xd-PCl">
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="60"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="e19-Wm-20o">
+                                <rect key="frame" x="645" y="13" width="54" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="eNz-Bb-hPB"/>
+                                    <constraint firstAttribute="height" constant="20" id="oL5-2F-1Uf"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RnA-2T-krT">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="doOK:" target="-2" id="DB1-cP-bYQ"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ejP-t0-fSn">
+                                <rect key="frame" x="13" y="13" width="76" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="I1p-77-lbd"/>
+                                    <constraint firstAttribute="width" constant="62" id="dPY-Tg-qiw"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jMu-xp-aHk">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="doCancel:" target="-2" id="NJy-Pw-g7K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="e19-Wm-20o" secondAttribute="trailing" constant="20" symbolic="YES" id="2Gx-ND-4jC"/>
+                            <constraint firstItem="e19-Wm-20o" firstAttribute="top" secondItem="4fb-Xd-PCl" secondAttribute="top" constant="20" symbolic="YES" id="50y-TX-RRH"/>
+                            <constraint firstItem="ejP-t0-fSn" firstAttribute="top" secondItem="4fb-Xd-PCl" secondAttribute="top" constant="20" symbolic="YES" id="OJg-fH-VfA"/>
+                            <constraint firstItem="ejP-t0-fSn" firstAttribute="leading" secondItem="4fb-Xd-PCl" secondAttribute="leading" constant="20" symbolic="YES" id="Tqo-UV-0T0"/>
+                            <constraint firstAttribute="height" constant="60" id="UdA-3L-rln"/>
+                        </constraints>
+                    </customView>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TFH-m9-e7v">
+                        <rect key="frame" x="18" y="67" width="676" height="86"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" selectable="YES" id="geh-P1-mJK">
+                            <font key="font" usesAppearanceFont="YES"/>
+                            <string key="title">If an option in the list below is checked, then that copy option will reuse options that you have previously set.  If it is unchecked, you will be prompted to set the options: a) whether you want the copy to go to memory (the Pasteboard) or the Notes area; b) whether to include a reference with the copy of the text, and c) whether you want to include accents or not.</string>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4fb-Xd-PCl" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="2MP-jo-FzL"/>
+                    <constraint firstAttribute="bottom" secondItem="4fb-Xd-PCl" secondAttribute="bottom" id="mIy-tX-z6C"/>
+                    <constraint firstAttribute="trailing" secondItem="4fb-Xd-PCl" secondAttribute="trailing" id="wtx-0G-cyP"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="24" y="179.5"/>
+        </window>
+    </objects>
+</document>
