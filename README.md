@@ -1,1 +1,0 @@
-# OldTestamentStudent-for-Mac
