@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="frmPreferences">
+            <connections>
+                <outlet property="preferencesTabView" destination="Ltj-gH-2cC" id="mxZ-Od-fJj"/>
+                <outlet property="viewTab1" destination="Xxg-gB-oAQ" id="4MK-DI-nB9"/>
+                <outlet property="viewTab2" destination="YdM-vl-Zij" id="mUC-Mq-DEX"/>
+                <outlet property="viewTab3" destination="hUw-u1-MZ2" id="tYR-qS-yMg"/>
+                <outlet property="viewTab4" destination="xv4-9g-54k" id="6Pn-01-qZH"/>
+                <outlet property="viewTab5" destination="LJD-lV-BVf" id="h4b-kJ-qkx"/>
+                <outlet property="viewTab6" destination="UcJ-q0-aa0" id="fbs-gb-mLG"/>
+                <outlet property="viewTab7" destination="voa-gu-jwh" id="YRX-Vd-g5g"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <rect key="contentRect" x="196" y="240" width="703" height="350"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1057"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="703" height="350"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="iry-o2-BB9">
+                        <rect key="frame" x="0.0" y="320" width="703" height="30"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PJp-NI-Iav">
+                                <rect key="frame" x="18" y="6" width="241" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Application areas that can be modified:" id="p2G-c3-kmI">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="SQy-bn-Vhw"/>
+                        </constraints>
+                    </customView>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Ko0-cr-X0x">
+                        <rect key="frame" x="0.0" y="0.0" width="703" height="30"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1H9-HI-OVP">
+                                <rect key="frame" x="14" y="-3" width="82" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Td5-pv-ZiR">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="doCancel:" target="-2" id="XF9-f5-bGe"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UaG-aU-V1r">
+                                <rect key="frame" x="630" y="-3" width="59" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pMi-Lb-HHT">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="doOK:" target="-2" id="No9-To-pPC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="jWd-bl-svi"/>
+                        </constraints>
+                    </customView>
+                    <tabView translatesAutoresizingMaskIntoConstraints="NO" id="Ltj-gH-2cC">
+                        <rect key="frame" x="-7" y="20" width="717" height="306"/>
+                        <font key="font" metaFont="system"/>
+                        <tabViewItems>
+                            <tabViewItem label="NT Text" identifier="" id="Hw8-ft-FoK">
+                                <view key="view" id="Xxg-gB-oAQ">
+                                    <rect key="frame" x="10" y="33" width="697" height="260"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="LXX Text" identifier="" id="yOx-T9-uos">
+                                <view key="view" id="YdM-vl-Zij">
+                                    <rect key="frame" x="10" y="33" width="697" height="260"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="Parse Details" identifier="" id="ArU-4Y-NL1">
+                                <view key="view" id="hUw-u1-MZ2">
+                                    <rect key="frame" x="10" y="33" width="697" height="260"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="Word Meanings" identifier="" id="D0I-kP-uYk">
+                                <view key="view" id="xv4-9g-54k">
+                                    <rect key="frame" x="10" y="33" width="697" height="260"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="Search Results" identifier="" id="llU-iO-8Zv">
+                                <view key="view" id="LJD-lV-BVf">
+                                    <rect key="frame" x="10" y="33" width="697" height="260"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="Vocab Lists" identifier="" id="DtJ-5r-UtG">
+                                <view key="view" id="UcJ-q0-aa0">
+                                    <rect key="frame" x="10" y="33" width="697" height="260"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="Notes" identifier="" id="IEj-Cc-Hcw">
+                                <view key="view" id="voa-gu-jwh">
+                                    <rect key="frame" x="10" y="33" width="697" height="260"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                            </tabViewItem>
+                        </tabViewItems>
+                    </tabView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ltj-gH-2cC" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="4Zz-7o-wjA"/>
+                    <constraint firstAttribute="trailing" secondItem="Ko0-cr-X0x" secondAttribute="trailing" id="4nY-BW-70D"/>
+                    <constraint firstItem="iry-o2-BB9" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="5dy-JA-oEr"/>
+                    <constraint firstItem="Ko0-cr-X0x" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="873-8E-ycE"/>
+                    <constraint firstItem="Ko0-cr-X0x" firstAttribute="top" secondItem="Ltj-gH-2cC" secondAttribute="bottom" id="QsL-jC-TxN"/>
+                    <constraint firstAttribute="trailing" secondItem="iry-o2-BB9" secondAttribute="trailing" id="YYD-dh-rWB"/>
+                    <constraint firstAttribute="bottom" secondItem="Ko0-cr-X0x" secondAttribute="bottom" id="b3h-lf-dtk"/>
+                    <constraint firstItem="Ltj-gH-2cC" firstAttribute="top" secondItem="iry-o2-BB9" secondAttribute="bottom" id="kCD-Q0-6rj"/>
+                    <constraint firstAttribute="trailing" secondItem="Ltj-gH-2cC" secondAttribute="trailing" id="rMz-Sd-aUb"/>
+                    <constraint firstItem="iry-o2-BB9" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" id="uP0-go-p9L"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="-165.5" y="119"/>
+        </window>
+    </objects>
+</document>

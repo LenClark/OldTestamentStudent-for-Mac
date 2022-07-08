@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
+        <plugIn identifier="com.apple.WebKit2IBPlugin" version="17156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="frmHelp">
+            <connections>
+                <outlet property="helpWindow" destination="F0z-JX-Cv5" id="w1Y-NT-wWO"/>
+                <outlet property="webView" destination="RVH-Cq-nRU" id="M40-uM-CUQ"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Greek Bible Student - Help" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="1200" height="1024"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1057"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="1200" height="1024"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="tmm-jg-XCW">
+                        <rect key="frame" x="0.0" y="0.0" width="1200" height="30"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Vb-ND-nTV">
+                                <rect key="frame" x="1111" y="-3" width="75" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="TIY-sb-05w"/>
+                                    <constraint firstAttribute="height" constant="21" id="sd7-6B-QA9"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="U1Q-Ya-4Gz">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="performClose:" target="F0z-JX-Cv5" id="Zwx-yO-G78"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="I09-tC-ha3"/>
+                            <constraint firstAttribute="bottom" secondItem="4Vb-ND-nTV" secondAttribute="bottom" constant="4" id="t3c-BP-RD8"/>
+                            <constraint firstAttribute="trailing" secondItem="4Vb-ND-nTV" secondAttribute="trailing" constant="20" symbolic="YES" id="yvw-ml-bhs"/>
+                        </constraints>
+                    </customView>
+                    <wkWebView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RVH-Cq-nRU">
+                        <rect key="frame" x="0.0" y="30" width="1200" height="994"/>
+                        <wkWebViewConfiguration key="configuration">
+                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                            <wkPreferences key="preferences"/>
+                        </wkWebViewConfiguration>
+                    </wkWebView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RVH-Cq-nRU" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="6yk-y0-83q"/>
+                    <constraint firstItem="tmm-jg-XCW" firstAttribute="top" secondItem="RVH-Cq-nRU" secondAttribute="bottom" id="SaD-TI-8l0"/>
+                    <constraint firstItem="tmm-jg-XCW" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="fRU-Mr-wV1"/>
+                    <constraint firstAttribute="trailing" secondItem="RVH-Cq-nRU" secondAttribute="trailing" id="gs7-rI-psl"/>
+                    <constraint firstAttribute="bottom" secondItem="tmm-jg-XCW" secondAttribute="bottom" id="iZz-Ci-U0V"/>
+                    <constraint firstAttribute="trailing" secondItem="tmm-jg-XCW" secondAttribute="trailing" id="o2g-Fb-mnB"/>
+                    <constraint firstItem="RVH-Cq-nRU" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" id="r9v-J2-N6Z"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="-165" y="119"/>
+        </window>
+    </objects>
+</document>

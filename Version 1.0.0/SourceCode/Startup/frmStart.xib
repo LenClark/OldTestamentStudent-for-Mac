@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="frmStart">
+            <connections>
+                <outlet property="initialisationProgress" destination="uAw-9I-CeY" id="YPz-Lt-o03"/>
+                <outlet property="labProgress1" destination="2LE-Nn-pTE" id="8Hj-0v-2PT"/>
+                <outlet property="labProgress2" destination="05u-fi-nNR" id="r7r-lq-p5q"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Greek Bible Student - Initialisation" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1057"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6qy-vM-wxf">
+                        <rect key="frame" x="-2" y="206" width="484" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="fBX-uj-qHi"/>
+                        </constraints>
+                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Please be Patient" id="lAC-vx-7cy">
+                            <font key="font" metaFont="system" size="24"/>
+                            <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="56u-oX-0b1">
+                        <rect key="frame" x="-2" y="182" width="484" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="DXq-By-50c"/>
+                        </constraints>
+                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Initialising Greek Bible Student" id="ddv-Vp-ult">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2LE-Nn-pTE">
+                        <rect key="frame" x="157" y="158" width="305" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="Bwo-P3-DSr"/>
+                        </constraints>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="No activity" id="8dc-ue-sm0">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="baf-cV-1yD">
+                        <rect key="frame" x="18" y="158" width="135" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="131" id="3NQ-ZG-9eR"/>
+                            <constraint firstAttribute="height" constant="16" id="64N-1H-dPd"/>
+                        </constraints>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Currently Processing:" id="fGq-yv-xAk">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="05u-fi-nNR">
+                        <rect key="frame" x="-2" y="134" width="484" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="JKe-NE-DWl"/>
+                        </constraints>
+                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="No sub-Activity" id="7gg-72-ITy">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <progressIndicator wantsLayer="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="uAw-9I-CeY">
+                        <rect key="frame" x="20" y="75" width="440" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="sVU-kn-bRg"/>
+                        </constraints>
+                    </progressIndicator>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="baf-cV-1yD" firstAttribute="top" secondItem="56u-oX-0b1" secondAttribute="bottom" constant="8" symbolic="YES" id="5gP-x5-t47"/>
+                    <constraint firstItem="56u-oX-0b1" firstAttribute="top" secondItem="6qy-vM-wxf" secondAttribute="bottom" constant="8" symbolic="YES" id="5gk-eP-aYP"/>
+                    <constraint firstItem="05u-fi-nNR" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="CeY-eT-sq9"/>
+                    <constraint firstAttribute="trailing" secondItem="uAw-9I-CeY" secondAttribute="trailing" constant="20" symbolic="YES" id="ERK-5O-cop"/>
+                    <constraint firstItem="6qy-vM-wxf" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="FEb-CG-TGr"/>
+                    <constraint firstItem="2LE-Nn-pTE" firstAttribute="leading" secondItem="baf-cV-1yD" secondAttribute="trailing" constant="8" symbolic="YES" id="GAL-QS-Bz3"/>
+                    <constraint firstItem="05u-fi-nNR" firstAttribute="top" secondItem="2LE-Nn-pTE" secondAttribute="bottom" constant="8" symbolic="YES" id="JKb-9S-GZV"/>
+                    <constraint firstItem="uAw-9I-CeY" firstAttribute="top" secondItem="05u-fi-nNR" secondAttribute="bottom" constant="40" id="LVu-EM-Wyw"/>
+                    <constraint firstAttribute="trailing" secondItem="2LE-Nn-pTE" secondAttribute="trailing" constant="20" symbolic="YES" id="PsQ-Db-BeB"/>
+                    <constraint firstItem="6qy-vM-wxf" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="36" id="Sam-rF-aCy"/>
+                    <constraint firstAttribute="trailing" secondItem="6qy-vM-wxf" secondAttribute="trailing" id="VIU-S3-5EX"/>
+                    <constraint firstItem="baf-cV-1yD" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" symbolic="YES" id="i6B-Ed-vKs"/>
+                    <constraint firstItem="56u-oX-0b1" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="kUw-yu-aX1"/>
+                    <constraint firstAttribute="trailing" secondItem="56u-oX-0b1" secondAttribute="trailing" id="nrF-Yj-Ig2"/>
+                    <constraint firstAttribute="trailing" secondItem="05u-fi-nNR" secondAttribute="trailing" id="pJv-om-6e0"/>
+                    <constraint firstItem="2LE-Nn-pTE" firstAttribute="top" secondItem="56u-oX-0b1" secondAttribute="bottom" constant="8" symbolic="YES" id="rIq-lA-wZR"/>
+                    <constraint firstItem="uAw-9I-CeY" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" symbolic="YES" id="v8q-Re-GcQ"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="-165" y="119"/>
+        </window>
+    </objects>
+</document>
